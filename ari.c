@@ -1,8 +1,7 @@
 #include <ctype.h>
-#include <cs50.h>
+//#include <cs50.h>
 
-string
-ari (string str)
+char* ari (char* str)
 {
   int noc = 0, now = 0, nos = 0, score;
   int len = strlen (str);
@@ -26,7 +25,7 @@ ari (string str)
     score = (int) ari_value;
   //score = ceil(ari_value);
 
-  string grade_level[] =
+  char* grade_level[] =
     { "Kindergarten", "First/Second Grade", "Third Grade", "Fourth Grade",
 "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade",
 "Eleventh Grade", "Twelfth Grade", "College student", "Professor" };
